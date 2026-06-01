@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="She Can Foundation - Empowering Women, Transforming Communities">
+    <meta name="keywords" content="NGO, Women Empowerment, Education, Community Development">
+    <meta name="author" content="She Can Foundation">
+    
+    <title>She Can Foundation - Empowering Women, Transforming Communities</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo Section -->
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>She Can</span>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#impact" class="nav-link">Impact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <!-- Dark Mode Toggle -->
+                <li class="nav-item">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="fade-in-top">
+                <h1 class="hero-title">She Can Foundation</h1>
+                <p class="hero-subtitle">Empowering Women, Transforming Communities</p>
+                <p class="hero-description">Building a world where every woman has the opportunity to thrive, learn, and lead.</p>
+                
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
+                        Learn More
+                    </button>
+                    <button class="btn btn-secondary" onclick="openJoinModal()">
+                        Join Us
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Our Mission</h2>
+                <p class="section-description">Learn about our vision and impact</p>
+            </div>
+
+            <div class="about-content">
+                <!-- Image Column -->
+                <div class="about-image-container fade-in-left">
+                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=600&q=80" alt="Women in community development" class="about-image">
+                    <div class="image-overlay"></div>
+                </div>
+
+                <!-- Text Column with Cards -->
+                <div class="about-text fade-in-right">
+                    <div class="mission-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>
+                            To provide equitable access to quality education, skill development, and economic opportunities for underprivileged women, enabling them to become independent, confident, and empowered members of society.
+                        </p>
+                    </div>
+
+                    <div class="vision-card">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>
+                            A world where gender is no barrier to success. We envision communities where women have equal access to education, employment, healthcare, and leadership opportunities.
+                        </p>
+                    </div>
+
+                    <div class="impact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Our Impact</h3>
+                        <p>
+                            Through dedicated programs and partnerships, we've transformed thousands of lives. Women in our programs report increased confidence, improved financial stability, and stronger community bonds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Statistics Section -->
+    <section id="impact" class="impact-stats">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title light-text">Our Impact in Numbers</h2>
+                <p class="section-description light-text">Making a difference, one woman at a time</p>
+            </div>
+
+            <div class="stats-grid">
+                <!-- Stat Card 1 -->
+                <div class="stat-card fade-in-up">
+                    <div class="stat-number counter" data-target="5000">0</div>
+                    <div class="stat-label">Women Empowered</div>
+                    <p class="stat-description">Direct beneficiaries of our programs</p>
+                </div>
+
+                <!-- Stat Card 2 -->
+                <div class="stat-card fade-in-up">
+                    <div class="stat-number counter" data-target="95">0</div>
+                    <div class="stat-label">% Employment Rate</div>
+                    <p class="stat-description">Post-training placement success</p>
+                </div>
+
+                <!-- Stat Card 3 -->
+                <div class="stat-card fade-in-up">
+                    <div class="stat-number counter" data-target="12">0</div>
+                    <div class="stat-label">Active Programs</div>
+                    <p class="stat-description">Across multiple communities</p>
+                </div>
+
+                <!-- Stat Card 4 -->
+                <div class="stat-card fade-in-up">
+                    <div class="stat-number counter" data-target="150">0</div>
+                    <div class="stat-label">Team Members</div>
+                    <p class="stat-description">Dedicated professionals and volunteers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-description">Guiding principles that drive our work</p>
+            </div>
+
+            <div class="values-grid">
+                <!-- Value 1 -->
+                <div class="value-card fade-in-up">
+                    <div class="value-icon">
+                        <i class="fas fa-lock-open"></i>
+                    </div>
+                    <h3>Empowerment</h3>
+                    <p>We believe in the inherent potential of every woman and work to unlock it through education and opportunity.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="value-card fade-in-up">
+                    <div class="value-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Equality</h3>
+                    <p>We are committed to creating a world where women have equal access to resources, rights, and opportunities.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="value-card fade-in-up">
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>We build strong networks where women support each other and create lasting change together.</p>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="value-card fade-in-up">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We embrace creative solutions and modern approaches to address challenges and drive sustainable development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content fade-in-top">
+                <h2>Ready to Make a Difference?</h2>
+                <p>Join thousands of supporters making real impact in women's lives</p>
+                <div class="cta-button-group">
+                    <button class="btn btn-primary-light" onclick="openJoinModal()">
+                        <i class="fas fa-heart"></i> Support Us
+                    </button>
+                    <button class="btn btn-outline-light" onclick="openContactModal()">
+                        Get in Touch
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Column 1 -->
+                <div class="footer-section fade-in-left">
+                    <h3>She Can Foundation</h3>
+                    <p>Empowering women through education, opportunity, and community support.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@shecancfoundation.org">info@shecancfoundation.org</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    </div>
+                </div>
+
+                <!-- Footer Column 2 -->
+                <div class="footer-section fade-in-up">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 3 -->
+                <div class="footer-section fade-in-up">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#">Education Initiative</a></li>
+                        <li><a href="#">Skills Training</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Healthcare Access</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 4 -->
+                <div class="footer-section fade-in-right">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 She Can Foundation. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Join Modal -->
+    <div id="joinModal" class="modal">
+        <div class="modal-content fade-in-center">
+            <span class="close-btn" onclick="closeJoinModal()">&times;</span>
+            <h2>Join Our Community</h2>
+            <form id="joinForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest">How would you like to contribute?</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select an option</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="donate">Make a Donation</option>
+                        <option value="partner">Become a Partner</option>
+                        <option value="learn">Learn More</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content fade-in-center">
+            <span class="close-btn" onclick="closeContactModal()">&times;</span>
+            <h2>Get In Touch</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Your Name</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Your Email</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
